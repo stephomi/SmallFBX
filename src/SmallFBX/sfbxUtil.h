@@ -5,14 +5,12 @@
 namespace sfbx {
 
 // escape forbidden characters (e.g. " -> &quot;). return false if no escape is needed.
-bool Escape(std::string& v);
+bool Escape(std::string &v);
 std::string Base64Encode(span<char> src);
-
-RawVector<int> Triangulate(span<int> counts, span<int> indices);
 
 struct JointWeights;
 struct JointMatrices;
-bool DeformPoints(span<float3> dst, const JointWeights& jw, const JointMatrices& jm, span<float3> src);
-bool DeformVectors(span<float3> dst, const JointWeights& jw, const JointMatrices& jm, span<float3> src);
+bool DeformPoints(span<float3> dst, const JointWeights &jw, const JointMatrices &jm, span<float3> src);
+bool DeformVectors(span<float3> dst, const JointWeights &jw, const JointMatrices &jm, span<float3> src);
 
 } // namespace sfbx

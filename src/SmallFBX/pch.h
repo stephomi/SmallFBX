@@ -17,6 +17,6 @@
 #include <tuple>
 #include <charconv>
 
-#ifdef __cpp_lib_span
+#ifdef __cpp_lib_span_NOM
     #include <span>
 #endif
